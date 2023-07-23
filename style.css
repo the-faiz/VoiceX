@@ -1,0 +1,332 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Roboto+Condensed:wght@300&family=Tektur&family=Varela+Round&family=Ysabeau+SC:wght@500&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Tektur', cursive;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;*/
+
+body {
+    margin:  0;
+    padding:  0;
+}
+
+.homePage{
+    background: url('3409297.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+}
+
+header {
+
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.5); Dark overlay color with transparency */
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav .secondary{
+    display: none;
+}
+
+.white-icon{
+    color:white;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 30px 30px;
+    font-family: 'Tektur', cursive;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+nav ul img{
+    width:75px;
+    height:75px;
+    border-radius: 100px;
+}
+
+nav .btn{
+    position:absolute;
+    right: 1vw;
+}
+
+nav .btn button{
+    color:white;
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 10px 10px;
+    font-family: 'Tektur', cursive;
+}
+
+nav .btn button:hover {
+    /* animation: neon-pulse 1.5s ease-in-out infinite; */
+    box-shadow: 0 0 40px #f06, 0 0 80px  #f90;
+    transition: 0.5s;
+  }
+
+nav a {
+    text-decoration: none;
+    color: white; /* Set the color of the navigation links */
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#secnav{
+    display:none;
+    background-color: #013356;
+    border-left:2px solid white;
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100vh;
+    z-index: 2;
+}
+
+.heading{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+}
+
+.heading h2{
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size:4rem;
+    margin:0;
+}
+
+.heading h1{
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    margin:0;
+}
+
+.heading span{
+    border: 2px solid grey;
+    padding:30px 30px;
+    margin:30px;
+    border-radius: 100px;
+    box-shadow: 0 0 40px #f06, 0 0 80px  #f90;
+}
+
+.heading span i:hover{
+    color:grey;
+}
+
+.suggestHeading{
+    color: white;
+    font-family: 'Tektur', cursive;
+    position: absolute;
+    bottom:35px;
+}
+
+.suggestion{
+    position:absolute;
+    margin:0;
+    top: 93vh;
+    width:100vw;
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow:column;
+    overflow-x:auto;
+    overscroll-behavior-inline: contain;
+    grid-gap: 10px;
+}
+
+.suggestion li{
+    list-style: none;
+    white-space: nowrap;
+    display:inline-block;
+    border:2px solid grey;
+    font-size: 1.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.chatPage {
+    background-image: linear-gradient(to bottom, #345f7d, #011c2f);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+
+  .chatPage li{
+    list-style: none;
+    border: 2px solid grey;
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border-radius: 50px;
+    margin:10px 10px;
+    padding:10px 10px;
+    width:50vw;
+    
+  }
+
+  .chatPage .reply{
+    align-self: flex-end;
+  }
+
+
+  p{
+    color:white;
+  }
+
+
+  .chatBox{
+    display:flex;
+    margin:20px 20px;
+    align-self: center;
+  }
+
+  .chatPage input{
+    background-color: black;
+    color:white;
+    border:2px solid grey;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    padding:10px 10px;
+    height:40px;
+    width:65vw;
+    border-radius: 20px;
+  }
+
+  .chatPage button{
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  .chatPage button:hover{
+    box-shadow: 0 0 10px #f06, 0 0 10px  #f90;
+  }
+
+  .chatPage img{
+    width:30px;
+    height:30px;
+
+  }
+
+  .footer{
+    background-image: linear-gradient(to bottom, #011c2f, black);
+    font-family: 'Ysabeau SC', sans-serif;
+  }
+
+  footer{
+
+    /* height: 25vh; */
+    display: flex;
+    align-items: flex-end;
+    color:white;
+    font-family: 'Ysabeau SC', sans-serif;
+  }
+
+  footer h1{
+    margin: 30px 30px;
+    font-size: 3rem;
+  }
+
+  footer ul{
+    display: flex;
+  }
+
+  footer ul li{
+    margin:20px 20px;
+  }
+
+  footer ul li{
+    list-style: none;
+  }
+
+  .copyright{
+    color:white;
+    display: block;
+    text-align: center;
+  }
+
+/* Media for nav bar  */
+
+@media screen and (max-width:1250px){
+    header nav .primary{
+        display: none;
+    }
+
+    header nav .secondary{
+        display:block;
+    }
+
+    .heading{
+        height:60vh;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav .btn button{
+        font-size: 0.8rem;
+    }
+    .secondary{
+        padding: 0;
+    }
+}
+/* Media for .heading  */
+
+@media screen and (max-width:1650px){
+    .heading h1{
+        font-size: 5rem;
+    }
+    .heading h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .heading h1{
+        font-size: 3rem;
+    }
+    .heading h2{
+        font-size: 2rem;
+    }
+}
+
+/* Media for chat box  */
+@media screen and (max-width:800px){
+    .chatPage input{
+        width: 80vw;
+    }
+}
+
+/* Media for footer  */
+@media screen and (max-width:850px){
+    footer ul li{
+        display:none;
+    }
+}
+
